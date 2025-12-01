@@ -1,0 +1,59 @@
+.barranavegacion {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--card);
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+  img.logo {
+    width: 60px;
+  }
+
+
+.socialmedia {
+  width: 24px;
+  cursor: pointer;
+}
+
+.listadoblogs{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  height: 35%;
+}
+
+.imagenesSlider {
+  display: flex;
+  width: 300%; 
+  animation: mover 9s infinite; 
+  height: 100%;
+}
+
+.imagenesSlider img {
+}
+
+
+.imagenprincipal {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.imagensecundaria {
+  width: 100%;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.titulo {
+  text-align: center;
+  padding: 2rem;
+}
+

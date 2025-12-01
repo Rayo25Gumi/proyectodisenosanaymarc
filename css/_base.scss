@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: 'inter', sans-serif;
+    line-height: 1.5;
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    color: var(--links);
+    text-decoration: none;
+}
+
+header,
+footer, aside {
+    padding: 1rem;
+    background-color: var(--tarjeta);
+    border: 2px solid var(--tarjeta); 
+    box-shadow: 0 0 10px 3px rgba(52, 152, 219, 0.5);
+    border-radius: 4%;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+h1{
+    font-weight: bolder;
+    color: var(--titulo);
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 14px;
+}
+
