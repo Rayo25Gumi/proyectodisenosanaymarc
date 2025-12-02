@@ -5,6 +5,7 @@
   --tarjeta: #4da6ff;
   --links: #0055cc;
   --titulo: #004080;
+  --semitransparente: 153, 204, 255, 0.9;
 }
 
 body.dark {
@@ -27,7 +28,7 @@ body {
   font-family: "inter", sans-serif;
   line-height: 1.5;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
 }
 
 a {
@@ -37,12 +38,11 @@ a {
 
 header,
 footer, aside {
-  padding: 1rem;
+  padding: 16px;
   background-color: var(--tarjeta);
   border: 2px solid var(--tarjeta);
   box-shadow: 0 0 10px 3px rgba(52, 152, 219, 0.5);
-  border-radius: 4%;
-  padding: 1rem;
+  border-radius: 10px;
 }
 
 img {
@@ -55,7 +55,18 @@ img {
   display: block;
 }
 
+article {
+  margin-left: 10%;
+  width: 70%;
+  background-color: var(--tarjeta);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-right: 5%;
+}
+
 aside {
+  margin-top: -21%;
   display: flex;
   flex-direction: column;
   border-radius: 5%;
@@ -67,25 +78,30 @@ h1 {
 }
 
 footer {
-  margin-top: 3rem;
+  margin-top: 40px;
   text-align: center;
   font-size: 14px;
 }
 
 main {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
-  padding: 2rem;
+  display: flex;
+  padding: 20px;
+  margin: 10px;
 }
 
 .barranavegacion {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  background: var(--card);
-  padding: 1rem;
+  gap: 16px;
+  padding: 16px;
   border-bottom: 1px solid #e5e5e5;
+  height: 35x;
+  align-items: center;
+}
+
+.socials {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
 }
 
 img.logo {
@@ -93,42 +109,88 @@ img.logo {
 }
 
 .socialmedia {
-  width: 24px;
+  height: 24px;
+  width: auto;
   cursor: pointer;
 }
 
 .listadoblogs {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
+}
+
+.listadoblogs img {
+  height: 120px;
+  width: 200px;
 }
 
 .slider {
-  width: 100%;
-  overflow: hidden;
+  width: 60%;
   height: 35%;
+  position: relative;
+  left: 11.5%;
 }
 
-.imagenesSlider {
-  display: flex;
-  width: 300%;
-  animation: mover 9s infinite;
+.zonaslider {
+  background-size: cover;
+  background-position: center;
   height: 100%;
-}
-
-.imagenprincipal {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
+  animation: efecto infinite 20s;
 }
 
-.imagensecundaria {
-  width: 100%;
-  border-radius: 8px;
-  margin: 1.5rem 0;
+@keyframes efecto {
+  0% {
+    background-image: url(../assets/img/gameboy.jpg);
+  }
+  20% {
+    background-image: url(../assets/img/atari.jpg);
+  }
+  40% {
+    background-image: url(../assets/img/nes.jpg);
+  }
+  60% {
+    background-image: url(../assets/img/play1-1.jpeg);
+  }
+  80% {
+    background-image: url(../assets/img/gameboy1.jpg);
+  }
+  100% {
+    background-image: url(../assets/img/play1-2.jpeg);
+  }
 }
-
 .titulo {
   text-align: center;
-  padding: 2rem;
+  padding: 30px;
+}
+
+.menu {
+  margin-left: 4px;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 10px 0;
+  background-color: rgb(var(--semitransparente));
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submenu li:hover {
+  background-color: var(--tarjeta);
 }/*# sourceMappingURL=main.css.map */

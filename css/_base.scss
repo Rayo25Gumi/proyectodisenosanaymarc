@@ -10,7 +10,7 @@ body {
     font-family: 'inter', sans-serif;
     line-height: 1.5;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
 }
 
 a {
@@ -20,12 +20,11 @@ a {
 
 header,
 footer, aside {
-    padding: 1rem;
+    padding: 16px;
     background-color: var(--tarjeta);
     border: 2px solid var(--tarjeta); 
     box-shadow: 0 0 10px 3px rgba(52, 152, 219, 0.5);
-    border-radius: 4%;
-    padding: 1rem;
+    border-radius: 10px;
 }
 
 img {
@@ -36,7 +35,18 @@ img {
     display: block;
 }
 
+article{
+    margin-left: 10%;
+    width: 70%;
+    background-color: var(--tarjeta);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin-right: 5%;
+}
+
 aside{
+    margin-top: -21%;
     display: flex;
     flex-direction: column;
     border-radius: 5%;
@@ -48,8 +58,8 @@ h1{
 }
 
 footer {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: 14px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
 }
 
