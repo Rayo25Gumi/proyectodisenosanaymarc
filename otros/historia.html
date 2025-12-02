@@ -9,36 +9,39 @@
 <body>
     <header>
         <nav class="barranavegacion">
-            <img class="logo" src="/assets/img/logo.png" alt="Logo RetroBlog">
-            <a href="/index.html">Inicio</a>
-            <a href="historia.html">Historia</a>
+            <img class="logo" src="../assets/img/logo.png" alt="Logo RetroBlog">
+            <a href="../index.html">Inicio</a>
+            <a href="../historia.html">Historia</a>
             <a href="https://es.wikipedia.org/wiki/Videoconsola">WikiConsolas</a>
             <nav class="menu">
-            <ul>
-            <li>
-            <a href="#">Artículos</a> 
-            <ul class="submenu">
-                <li><a href="/articulos/articulo1.html">Artículo 1: NES</a></li>
-                <li><a href="/articulos/articulo2.html">Artículo 2: GameBoy</a></li>
-                <li><a href="/articulos/articulo3.html">Artículo 3: SEGA</a></li>
-                <li><a href="/articulos/articulo4.html">Artículo 4: Playstation1</a></li>
-            </ul>
-            </li>
-        </ul>
-        
-        </nav>
-        <label class="check-modo-oscuro">
-    <input type="checkbox" id="modo-oscuro">
-</label>
+                <ul>
+                    <li>
+                        <a href="#">Artículos</a> 
+                        <ul class="submenu">
+                            <li><a href="articulo1.html">Artículo 1: NES</a></li>
+                            <li><a href="articulo2.html">Artículo 2: GameBoy</a></li>
+                            <li><a href="articulo3.html">Artículo 3: SEGA</a></li>
+                            <li><a href="articulo4.html">Artículo 4: Playstation1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <label class="check-modo-oscuro">
+                <input type="checkbox" id="modo-oscuro">
+            </label>
             <div class="socials">
-            <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/twitter.png" alt="Twitter" class="socialmedia"></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/instagram.png" alt="Instagram" class="socialmedia"></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/youtube.png" alt="YouTube" class="socialmedia"></a>
-            <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/twitch.png" alt="Twitch" class="socialmedia"></a>
+                <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/twitter.png" alt="Twitter" class="socialmedia">
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/instagram.png" alt="Instagram" class="socialmedia">
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/youtube.png" alt="YouTube" class="socialmedia">
+                </a>
+                <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/twitch.png" alt="Twitch" class="socialmedia">
+                </a>
             </div>
         </nav>
     </header>
@@ -108,11 +111,11 @@
 <script>
     let checkbox = document.getElementById('modo-oscuro');
     checkbox.onchange = function() {
-    if (this.checked) {
-        document.body.className = 'dark';
-    } else {
-        document.body.className = '';
+        if (this.checked) {
+            document.body.className = 'dark';
+        } else {
+            document.body.className = '';
+        }
     }
-}
 </script>
 </html>
