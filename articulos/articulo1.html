@@ -18,34 +18,51 @@
             <li>
             <a href="#">Artículos</a> 
             <ul class="submenu">
-                <li><a href="articulos/articulo1.html">Artículo 1: NES</a></li>
-                <li><a href="articulos/articulo2.html">Artículo 2: GameBoy</a></li>
-                <li><a href="articulos/articulo3.html">Artículo 3: SEGA</a></li>
-                <li><a href="articulos/articulo4.html">Artículo 4: Playstation1</a></li>
+                <li><a href="articulo1.html">Artículo 1: NES</a></li>
+                <li><a href="articulo2.html">Artículo 2: GameBoy</a></li>
+                <li><a href="articulo3.html">Artículo 3: SEGA</a></li>
+                <li><a href="articulo4.html">Artículo 4: Playstation1</a></li>
             </ul>
             </li>
         </ul>
         </nav>
-        <div class="socials">
-            <img src="/assets/img/twitter.png" alt="Twitter" class="socialmedia">
-            <img src="/assets/img/instagram.png" alt="Instagram" class="socialmedia">
-            <img src="/assets/img/youtube.png" alt="YouTube" class="socialmedia">
-            <img src="/assets/img/twitch.png" alt="Twitch" class="socialmedia">
-        </div>
-
+        <label class="check-modo-oscuro">
+    <input type="checkbox" id="modo-oscuro">
+</label>
+            <div class="socials">
+                
+            <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/twitter.png" alt="Twitter" class="socialmedia" ></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/instagram.png" alt="Instagram" class="socialmedia"></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/youtube.png" alt="YouTube" class="socialmedia"></a>
+            <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/twitch.png" alt="Twitch" class="socialmedia"></a>
+            </div>
         </nav>
+
     </header>
 
-   <!-- <div class="container"> -->
 
     <div class="fila1">
         <img class="imagenprincipal" src="/assets/img/nes.jpg" alt="NES clásica">
         <article class="articulo1">
-            <h1 class="titulo">La historia de la NES</h1>
-            <p>
-                La Nintendo Entertainment System (NES) es una de las consolas más importantes de la historia.
-                Lanzada en Japón en 1983 como Famicom, llegó a occidente en 1985 y ayudó a recuperar la industria
-                del videojuego tras la gran crisis de 1983.            </p>
+    <h1 class="titulo">La Historia de la NES</h1>
+
+    <h2>Introducción</h2>
+    <p>
+        La Nintendo Entertainment System (NES) es una de las consolas más importantes de la historia.
+        Lanzada en Japón en 1983 como Famicom, llegó a occidente en 1985 y ayudó a recuperar la industria
+        del videojuego tras la gran crisis de 1983.
+    </p>
+    <br>
+
+    <h2>Origen y lanzamiento</h2>
+    <p>
+        Su llegada a occidente marcó un antes y un después en los videojuegos. Gracias a su diseño accesible
+        y a los icónicos juegos que ofrecía, logró captar la atención de un público amplio y diverso.
+    </p>
         </article>
     </div>
 
@@ -79,11 +96,20 @@
         <img class="imagensecundaria" src="/assets/img/mandones.jpeg" alt="Mando de NES">
     </div>
 
-<!-- </div> -->
 
     <footer>
-        <a>© 2025 RetroBlog</a>
-        <a>Hecho por Sana  y Marc </a>
+        <a>© 2025- RetroBlog -[o.o]- </a>
+        <a>By Sana & Marc </a>
     </footer>
 </body>
+<script>
+    let checkbox = document.getElementById('modo-oscuro');
+    checkbox.onchange = function() {
+    if (this.checked) {
+        document.body.className = 'dark';
+    } else {
+        document.body.className = '';
+    }
+}
+</script>
 </html>

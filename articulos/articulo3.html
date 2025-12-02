@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mega Drive vs Super Nintendo - RetroBlog!</title>
+    <title>La historia de la NES - RetroBlog!</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -13,60 +13,101 @@
             <a href="/index.html">Inicio</a>
             <a href="/otros/historia.html">Historia</a>
             <a href="https://es.wikipedia.org/wiki/Videoconsola">WikiConsolas</a>
-            <nav class="menu">
+                    <nav class="menu">
             <ul>
             <li>
             <a href="#">Artículos</a> 
             <ul class="submenu">
-                <li><a href="articulos/articulo1.html">Artículo 1: NES</a></li>
-                <li><a href="articulos/articulo2.html">Artículo 2: GameBoy</a></li>
-                <li><a href="articulos/articulo3.html">Artículo 3: SEGA</a></li>
-                <li><a href="articulos/articulo4.html">Artículo 4: Playstation1</a></li>
+                <li><a href="articulo1.html">Artículo 1: NES</a></li>
+                <li><a href="articulo2.html">Artículo 2: GameBoy</a></li>
+                <li><a href="articulo3.html">Artículo 3: SEGA</a></li>
+                <li><a href="articulo4.html">Artículo 4: Playstation1</a></li>
             </ul>
             </li>
         </ul>
         </nav>
+        <label class="check-modo-oscuro">
+    <input type="checkbox" id="modo-oscuro">
+</label>
+            <div class="socials">
 
-            <img src="/assets/img/twitter.png" alt="Twitter" class="socialmedia">
-            <img src="/assets/img/instagram.png" alt="Instagram" class="socialmedia">
-            <img src="/assets/img/youtube.png" alt="YouTube" class="socialmedia">
-            <img src="/assets/img/twitch.png" alt="Twitch" class="socialmedia">
+                
+            <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/twitter.png" alt="Twitter" class="socialmedia" ></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/instagram.png" alt="Instagram" class="socialmedia"></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/youtube.png" alt="YouTube" class="socialmedia"></a>
+            <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/twitch.png" alt="Twitch" class="socialmedia"></a>
+            </div>
         </nav>
+
     </header>
 
-    <main>
-        <img class="imagenprincipal" src="/assets/img/megadrive.jpg" alt="SEGA Mega Drive">
 
-        <article>
-            <h1>SEGA Mega Drive vs Super Nintendo</h1>
-            <br>
+    <div class="fila1">
+        <img class="imagenprincipal" src="/assets/img/snes.jpeg" alt="SuperNes">
+        <article class="articulo1">
+            <h1 class="titulo">SEGA Mega Drive vs Super Nintendo</h1>
 
+            <h2>Introducción</h2>
             <p>
                 La guerra entre SEGA y Nintendo marcó los años 90. La SEGA Mega Drive apostaba por una imagen
                 más agresiva, juegos rápidos y campañas dirigidas a un público más adolescente. La Super Nintendo,
                 en cambio, ofrecía colores más vivos y un sonido superior.
             </p>
             <br>
+        </article>
+    </div>
 
-            <img class="imagensecundaria" src="/assets/img/mandoatari.jpeg" alt="Super Nintendo">
-
-            <br>
+    <div class="fila2">
+        <article class="articulo2">
+            <h2>Juegos emblemáticos</h2>
             <p>
                 Mientras Mega Drive destacaba con Sonic, Streets of Rage o Golden Axe, Nintendo impresionaba con
                 Super Mario World, Zelda: A Link to the Past y Donkey Kong Country. Cada una tenía su estilo, y
                 esa rivalidad ayudó a elevar la calidad del mercado.
             </p>
-            <br>
 
-            <p><em>
-                "Si te gusta la nostalgia, este es tu sitio."
-            </em></p>
+            <h2>Diseño y características</h2>
+            <p>
+                La Mega Drive ofrecía un diseño más compacto y colores más oscuros, con un sonido potente para la época.
+                La Super Nintendo tenía un diseño más redondeado, colores brillantes y un sistema de sonido superior que
+                permitía música más rica y efectos especiales.
+            </p>
+
+            <h2>Impacto en la industria</h2>
+            <p>
+                Esta rivalidad impulsó la innovación en los videojuegos. Cada consola motivaba a los desarrolladores
+                a crear títulos más complejos y atractivos. Gracias a esto, surgieron sagas que siguen vigentes hoy en día.
+            </p>
+
+            <h2>Legado</h2>
+            <p>
+                La batalla entre SEGA y Nintendo dejó una huella imborrable en los años 90. Jugadores de todo el mundo
+                recuerdan con nostalgia sus títulos favoritos y la competencia ayudó a sentar las bases de la industria
+                moderna del videojuego.
+            </p>
         </article>
-    </main>
+
+        <img class="imagensecundaria" src="/assets/img/megadrive.jpg" alt="SEGA Mega Drive">
+    </div>
+
 
     <footer>
-        <a>© 2025 RetroBlog</a>
-        <a>Hecho por Sana  y Marc </a>
+        <a>© 2025- RetroBlog -[o.o]- </a>
+        <a>By Sana & Marc </a>
     </footer>
 </body>
+<script>
+    let checkbox = document.getElementById('modo-oscuro');
+    checkbox.onchange = function() {
+    if (this.checked) {
+        document.body.className = 'dark';
+    } else {
+        document.body.className = '';
+    }
+}
+</script>
 </html>

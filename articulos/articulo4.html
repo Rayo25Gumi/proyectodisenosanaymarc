@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playstation 1: El principio - RetroBlog!</title>
+    <title>La historia de la NES - RetroBlog!</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -13,63 +13,98 @@
             <a href="/index.html">Inicio</a>
             <a href="/otros/historia.html">Historia</a>
             <a href="https://es.wikipedia.org/wiki/Videoconsola">WikiConsolas</a>
-            <nav class="menu">
+                    <nav class="menu">
             <ul>
             <li>
             <a href="#">Artículos</a> 
             <ul class="submenu">
-                <li><a href="articulos/articulo1.html">Artículo 1: NES</a></li>
-                <li><a href="articulos/articulo2.html">Artículo 2: GameBoy</a></li>
-                <li><a href="articulos/articulo3.html">Artículo 3: SEGA</a></li>
-                <li><a href="articulos/articulo4.html">Artículo 4: Playstation1</a></li>
+                <li><a href="articulo1.html">Artículo 1: NES</a></li>
+                <li><a href="articulo2.html">Artículo 2: GameBoy</a></li>
+                <li><a href="articulo3.html">Artículo 3: SEGA</a></li>
+                <li><a href="articulo4.html">Artículo 4: Playstation1</a></li>
             </ul>
             </li>
         </ul>
         </nav>
+        <label class="check-modo-oscuro">
+    <input type="checkbox" id="modo-oscuro">
+</label>
+            <div class="socials">
 
-            <img src="/assets/img/twitter.png" alt="Twitter" class="socialmedia">
-            <img src="/assets/img/instagram.png" alt="Instagram" class="socialmedia">
-            <img src="/assets/img/youtube.png" alt="YouTube" class="socialmedia">
-            <img src="/assets/img/twitch.png" alt="Twitch" class="socialmedia">
+                
+            <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/twitter.png" alt="Twitter" class="socialmedia" ></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/instagram.png" alt="Instagram" class="socialmedia"></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/youtube.png" alt="YouTube" class="socialmedia"></a>
+            <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/twitch.png" alt="Twitch" class="socialmedia"></a>
+            </div>
         </nav>
+
     </header>
 
-    <main>
-        <img class="imagenprincipal" src="/assets/img/play1-1.jpeg" alt="PlayStation 1">
 
-        <article>
-            <h1>PlayStation 1: El principio de una nueva generación</h1>
-            <br>
+<div class="fila1">
+    <img class="imagenprincipal" src="/assets/img/play1-2.jpeg" alt="PlayStation 1">
+    <article class="articulo1">
+        <h1 class="titulo">PlayStation 1: El principio de una nueva generación</h1>
 
-            <p>
+        <h2>Introducción</h2>
+        <p>
             La PlayStation 1 llegó en 1994 como la primera consola de Sony y rápidamente se convirtió en un punto de inflexión en la industria del videojuego.
             El uso del CD-ROM permitió crear juegos mucho más grandes, con mejores cinemáticas, sonido de mayor calidad y mundos en 3D que superaban ampliamente 
             las limitaciones de los cartuchos tradicionales.
-            Su catálogo creció con rapidez gracias a la apuesta de Sony por facilitar el desarrollo a estudios externos, 
-            lo que dio lugar a sagas míticas como Final Fantasy, Gran Turismo, Tekken, Resident Evil o Crash Bandicoot. 
-    
-            </p>
-            <br>
-            <img class="imagensecundaria" src="/assets/img/play1-2.jpeg" alt="PlayStation 1">
+        </p>
+        <br>
+    </article>
+</div>
 
-            <br>
-            <p>
+<div class="fila2">
+    <article class="articulo2">
+        <h2>Impacto en occidente</h2>
+        <p>
+            Su llegada a occidente marcó un antes y un después en los videojuegos. Gracias a su diseño accesible
+            y a los icónicos juegos que ofrecía, logró captar la atención de un público amplio y diverso.
             Con un precio competitivo, una estrategia de marketing muy efectiva y un enfoque claro hacia un público adolescente y adulto,
             la PlayStation 1 llegó a millones de hogares en todo el mundo.
             Su impacto redefinió el mercado y estableció las bases del videojuego moderno. 
             Por eso, la PS1 es recordada como el verdadero comienzo de una nueva generación.
-            </p>
-            <br><br>
+        </p>
 
-            <p><em>
-                "Si te gusta la nostalgia, este es tu sitio."
-            </em></p>
-        </article>
-    </main>
+        <h2>Diseño y características</h2>
+        <p>
+            La PS1 contaba con un diseño compacto, mando ergonómico y una arquitectura capaz de mover gráficos 3D en tiempo real.
+            Sus juegos podían aprovechar cinemáticas, música digital y efectos de sonido de alta calidad, algo que antes era difícil con los cartuchos.
+        </p>
+
+        <h2>Legado y colección de juegos</h2>
+        <p>
+            La PlayStation 1 es recordada por títulos icónicos como Final Fantasy VII, Metal Gear Solid, Resident Evil y Gran Turismo.
+            Más de 100 millones de unidades vendidas y un catálogo de cientos de juegos la convierten en un hito histórico.
+        </p>
+    </article>
+
+    <img class="imagensecundaria" src="/assets/img/play1-1.jpeg" alt="PlayStation 1">
+</div>
+
 
     <footer>
-        <a>© 2025 RetroBlog</a>
-        <a>Hecho por Sana  y Marc </a>
+        <a>© 2025- RetroBlog -[o.o]- </a>
+        <a>By Sana & Marc </a>
     </footer>
 </body>
+<script>
+    let checkbox = document.getElementById('modo-oscuro');
+    checkbox.onchange = function() {
+    if (this.checked) {
+        document.body.className = 'dark';
+    } else {
+        document.body.className = '';
+    }
+}
+</script>
 </html>
+
+

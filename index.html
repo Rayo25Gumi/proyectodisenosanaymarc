@@ -6,7 +6,10 @@
     <title>RetroBlog!</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+
+</label>
     <header>
         <nav class="barranavegacion">
             <img class="logo" src="assets/img/logo.png" alt="Logo RetroBlog">
@@ -26,11 +29,19 @@
             </li>
         </ul>
         </nav>
-            <div class="socials">
-            <img src="assets/img/twitter.png" alt="Twitter" class="socialmedia">
-            <img src="assets/img/instagram.png" alt="Instagram" class="socialmedia">
-            <img src="assets/img/youtube.png" alt="YouTube" class="socialmedia">
-            <img src="assets/img/twitch.png" alt="Twitch" class="socialmedia">
+<label class="check-modo-oscuro">
+    <input type="checkbox" id="modo-oscuro">
+</label>
+
+        <div class="socials">
+            <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/twitter.png" alt="Twitter" class="socialmedia"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/instagram.png" alt="Instagram" class="socialmedia"></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/youtube.png" alt="YouTube" class="socialmedia"></a>
+            <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/img/twitch.png" alt="Twitch" class="socialmedia"></a>
             </div>
         </nav>
     </header>
@@ -86,8 +97,19 @@
     </main>
 
     <footer>
-        <a>© 2025 RetroBlog</a>
-        <a>Hecho por Sana y Marc </a>
+        <a>© 2025- RetroBlog -[o.o]- </a>
+        <a>By Sana & Marc </a>
     </footer>
+    
 </body>
+<script>
+    let checkbox = document.getElementById('modo-oscuro');
+    checkbox.onchange = function() {
+    if (this.checked) {
+        document.body.className = 'dark';
+    } else {
+        document.body.className = '';
+    }
+}
+</script>
 </html>

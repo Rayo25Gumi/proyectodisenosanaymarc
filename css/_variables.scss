@@ -5,13 +5,19 @@
     --links: #0055cc;      
     --titulo: #004080;   
     --semitransparente: 153, 204, 255, 0.9;
-    --tarjeta2: rgb(0, 145, 255);
+    --tarjeta2: #66b3ff;
+}
+
+@mixin dark-mode {
+    --fondo: #0f233f;
+    --texto: #cae0f6;
+    --tarjeta: #4a90ff;
+    --tarjeta2: #2b3b55;
+    --links: #99ccff;
+    --titulo: #80d0ff;
+    --semitransparente: 15, 35, 63, 0.9;
 }
 
 body.dark {
-    --fondo: #0a1a33;      
-    --texto: #cce6ff;      
-    --tarjeta: #3380ff;    
-    --links: #3366cc;      
-    --titulo: #154db8;     
+    @include dark-mode;
 }
