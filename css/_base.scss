@@ -33,6 +33,7 @@ img {
     object-fit: cover;
     object-position: center;
     display: block;
+    border-radius: 10px;
 }
 
 article{
@@ -53,6 +54,11 @@ aside{
 }
 
 h1{
+    font-weight: bolder;
+    color: var(--titulo);
+}
+
+h2{
     font-weight: bolder;
     color: var(--titulo);
 }

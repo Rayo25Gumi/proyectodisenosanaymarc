@@ -6,6 +6,7 @@
   --links: #0055cc;
   --titulo: #004080;
   --semitransparente: 153, 204, 255, 0.9;
+  --tarjeta2: rgb(0, 145, 255);
 }
 
 body.dark {
@@ -53,6 +54,7 @@ img {
   -o-object-position: center;
      object-position: center;
   display: block;
+  border-radius: 10px;
 }
 
 article {
@@ -73,6 +75,11 @@ aside {
 }
 
 h1 {
+  font-weight: bolder;
+  color: var(--titulo);
+}
+
+h2 {
   font-weight: bolder;
   color: var(--titulo);
 }
@@ -138,6 +145,7 @@ img.logo {
   height: 100%;
   width: 100%;
   animation: efecto infinite 20s;
+  border-radius: 10px;
 }
 
 @keyframes efecto {
@@ -193,4 +201,53 @@ img.logo {
 
 .submenu li:hover {
   background-color: var(--tarjeta);
+}
+
+.fila1 {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 30px;
+}
+
+.imagenprincipal {
+  width: 40%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.articulo1 {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  margin-right: 10%;
+}
+
+.articulo1 h1 {
+  font-size: 40px;
+}
+
+.fila2 {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 30px;
+}
+
+.imagensecundaria {
+  width: 20%;
+  height: 100%;
+  margin: 0%;
+}
+
+.articulo2 {
+  height: 100%;
+  width: 58%;
+  margin: 0;
+  margin-left: 10%;
+  background-color: var(--tarjeta2);
 }/*# sourceMappingURL=main.css.map */

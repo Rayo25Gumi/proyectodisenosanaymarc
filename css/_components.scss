@@ -47,6 +47,7 @@ background-position: center;
 height: 100%;
 width: 100%;
 animation: efecto infinite 20s;
+border-radius: 10px;
 }
 
 @keyframes efecto {
@@ -101,4 +102,58 @@ animation: efecto infinite 20s;
 
 .submenu li:hover {
   background-color: var(--tarjeta); 
+}
+
+// ARTICULOS!
+
+
+.fila1 {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  // background-color: black;
+  margin: 30px;
+}
+
+.imagenprincipal {
+  width: 40%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.articulo1 {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  margin-right: 10%;
+}
+
+.articulo1 h1{
+  font-size: 40px;
+}
+
+.fila2 {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  // background-color: black;
+  margin: 30px;
+}
+
+.imagensecundaria {
+  width: 20%;
+  height: 100%;
+  margin: 0%;
+}
+
+.articulo2 {
+  height: 100%;
+  width: 58%;
+  margin: 0;
+  margin-left: 10%;
+  background-color: var(--tarjeta2);
 }
